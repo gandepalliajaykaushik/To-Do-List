@@ -1,0 +1,246 @@
+body {
+    background-color: aliceblue;
+    margin: 0%;
+    padding: 0%;
+    color: #2e2c29;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/connected.png");
+}
+
+h1 {
+    margin:0;
+    padding-top: 0.4rem;
+    padding-left: 1rem;
+}
+
+#title {
+    background-color: rgb(0, 170, 255);
+    padding: 1rem 0;
+    color: #2e2c29;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid #2e2c29;
+}
+
+#title img{
+    width: 50px;
+    margin-left: 2rem;
+}
+
+.taskboxes {
+    display: flex;
+}
+
+.newbox {
+    width:27%;
+    height:100vh;
+    text-align: center;
+}
+
+.newtask {
+    margin: 5rem auto;
+    width: 90%;
+    /* height: 350px; */
+    border: 1px solid #2e2c29;
+    box-shadow: 3px 3px 10px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/brushed-alum-dark.png");
+}
+
+.newtasktitle {
+    padding: 1rem;
+}
+
+
+.newtasktitleinput {
+    padding: 8px 10px;
+    width: 80%;
+    border: none;
+    border-bottom: 1px solid black;
+    font-size: 1.5rem;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.newtasktitleinput:focus {
+    outline: 0;
+}
+
+.newtaskcontent #inputcontent {
+    /* background-color: #f7f7b0; */
+    margin: 2% auto;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.newtaskdate{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.datelabel{
+    font-size: 1.5rem;
+}
+
+.taskdate{
+    font-size: 1rem;
+    margin-left: 3%;
+}
+
+.newtasksavebutton {
+    margin: 10% auto 5%;
+    padding: 0.5rem 2rem;
+    background-color: rgb(45, 161, 250);
+    color: #2e2c29;
+    border: 1px solid #2e2c29;
+    font-size: 1.2rem;
+}
+
+.newtasksavebutton:hover{
+    cursor: pointer;
+    background-color: rgb(19, 143, 238);
+}
+
+
+
+/* pendingtasks */
+
+.pendingbox {
+    width:37%;
+    height:100vh;
+    padding: 0.5rem 1.5rem 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.pendingbox h2 {
+    color: #2e2c29;
+}
+
+.pendingtask {
+    margin: 2rem 1.5rem 0 1.5rem;
+    border-radius: 10px;
+}
+
+.pendingtaskmain {
+    padding: 1rem;
+    background-color: rgb(0, 170, 255);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.borderradiusclass {
+    border-bottom-left-radius: 0%;
+    border-bottom-right-radius: 0%;
+}
+
+
+.pendingtaskdate {
+    float: right;
+}
+
+.pendingtaskcontent {
+    padding: 1rem 1rem 0.5rem 1rem;
+    border:1px solid #2e2c29;
+    background-color: aliceblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    font-size: 2rem;
+}
+
+.pendingbuttons {
+    margin-top: 0.3rem;
+}
+
+.pendingbuttons button {
+    margin: 0.2rem 0.3rem;
+    padding: 0.3rem 0.5rem;
+    background-color: rgb(45, 161, 250);
+    border: none;
+    border-radius: 4px;
+    color: #2e2c29;
+    font-size: 1.2rem;
+}
+
+.pendingbuttons button:hover {
+    cursor: pointer;
+    background-color: rgb(19, 143, 238);
+}
+
+/* completedtasks */
+
+.completedbox {
+    width:36%;
+    height:100vh;
+    padding: 0.5rem 1.5rem 2.5rem 1.5rem;
+    text-align: center;
+}
+
+.completedbox h2 {
+    color: #2e2c29;
+}
+
+.completedtask {
+    margin: 2rem 1.5rem 0 1.5rem;
+    border-radius: 10px;
+}
+
+.completedtaskmain {
+    padding: 1rem;
+    background-color: rgb(0, 170, 255);
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.completedtaskdate {
+    float: right;
+}
+
+.completedtaskcontent {
+    padding: 1rem 1rem 0.5rem 1rem;
+    border:1px solid #2e2c29;
+    background-color: aliceblue;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    font-size: 2rem;
+}
+
+.icon{
+    font-size: 100px;
+}
+
+.completedbuttons button {
+    margin: 0.2rem 0.3rem;
+    padding: 0.3rem 0.5rem;
+    background-color: rgb(19, 143, 238);
+    border: none;
+    border-radius: 4px;
+    color: #2e2c29;
+    font-size: 1.2rem;
+}
+
+.completedbuttons button {
+    cursor: pointer;
+    background-color: rgb(45, 161, 250);
+}
+
+@media only screen and (max-width: 1000px) {
+    #title {
+        width:120%;
+    }    
+    .taskboxes {
+        display: flex;
+        flex-direction: column;
+    }
+    .newbox {
+        width:100%;
+        text-align: center;
+    }
+    .pendingbox {
+        width: 100%;
+    }
+    .completedbox {
+        width: 100%;
+    }
+  }
